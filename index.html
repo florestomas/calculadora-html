@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora HTML-JS</title>
+    
+    <script src="./index.js" defer></script>
+    
+    <!--
+    ./ - para indicar que son de la misma carpeta
+    defer - para que carge el js despues del html 
+     -->
+
+    <style>
+        body{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: center;
+        }
+        input{
+            display: block;
+            margin: auto;
+            margin-bottom: 15px;
+            width: 20%;
+            box-sizing: border-box;
+        }
+        button{
+            display: block;
+            margin: auto;
+            margin-bottom: 15px;
+        }
+        form{
+            margin: auto;
+            margin-bottom: 15px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Calculadora HTML-JS</h1>
+    
+    <form>
+        <input required type="number" id="num1" value="22" placeholder="1er NUM"/>
+
+        <input required type="number" id="num2" value="10" placeholder="2do NUM"/>
+        
+            <label>Eliga la operacion que desee</label>
+            <select id="operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+    </form>
+    
+    <button id="btn-op">Realizar la operacion</button>
+
+    <span>El resultado de su operacion es: <strong id="result">SAPE</strong></span>
+
+</body>
+</html>
